@@ -74,7 +74,7 @@ export class AppComponent {
   }
 
   rastgelePixel(){
-    let veri:number = Math.floor(Math.random()*100)+700
+    let veri:number = Math.floor(Math.random()*100)+1000
     //console.log(veri)
     //veri = veri*10
     return veri;
