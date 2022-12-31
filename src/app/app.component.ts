@@ -72,15 +72,19 @@ export class AppComponent {
   get testMessage(){
   return 'Bu bir test verisidir';
   }
+
+  rastgelePixel(){
+    let veri:number = Math.floor(Math.random()*100)+700
+    //console.log(veri)
+    //veri = veri*10
+    return veri;
+  }
+
   get resim(){ 
-  let veri:number = Math.floor(Math.random()*100)+400
-  veri = veri*10
-  console.log(veri)
-  let veri2:number = Math.floor(Math.random()*100)+700
-  veri2 = veri2*10
-  console.log(veri)
-  
-  return "https://picsum.photos/"+veri2.toString()+"/"+veri.toString()}
+    let url = "https://picsum.photos/"+this.rastgelePixel().toString()+"/"+this.rastgelePixel().toString();
+    console.log(url);
+    return url;
+  }
   
   olustur():void{
    this.data.split("--").forEach(
