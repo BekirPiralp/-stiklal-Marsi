@@ -73,11 +73,11 @@ export class AppComponent {
   return 'Bu bir test verisidir';
   }
   get resim(){ 
-  let veri:number = Math.floor(Math.random()*10)+4
-  veri = veri*100
+  let veri:number = Math.floor(Math.random()*100)+400
+  veri = veri*10
   console.log(veri)
-  let veri2:number = Math.floor(Math.random()*8)+7
-  veri2 = veri2*100
+  let veri2:number = Math.floor(Math.random()*100)+700
+  veri2 = veri2*10
   console.log(veri)
   
   return "https://picsum.photos/"+veri2.toString()+"/"+veri.toString()}
